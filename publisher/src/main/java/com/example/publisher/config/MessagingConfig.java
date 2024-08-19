@@ -1,4 +1,4 @@
-package com.example.rabbitMQ.config;
+package com.example.publisher.config;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.Binding;
@@ -14,9 +14,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MessagingConfig {
 
-    public static final String QUEUE = "message_queue";
-    public static final String EXCHANGE = "message_exchange";
-    public static final String ROUTING_KEY = "message_routingKey";
+    public static final String QUEUE = "email_queue";
+    public static final String EXCHANGE = "email_exchange";
+    public static final String ROUTING_KEY = "email_routingKey";
     
     @Bean
     public Queue queue(){
